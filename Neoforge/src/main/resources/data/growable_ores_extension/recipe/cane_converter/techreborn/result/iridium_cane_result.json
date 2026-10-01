@@ -1,0 +1,22 @@
+{
+    "fabric:load_conditions": [
+        {
+            "condition": "fabric:all_mods_loaded",
+            "values": [
+                "techreborn"
+            ]
+        }
+    ],
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "techreborn"
+        }
+    ],
+    "type": "growable_ores_extension:cane_converter",
+    "ingredient": "growable_ores:iridium_cane",
+    "result": {
+        "id": "techreborn:iridium_ingot",
+        "count": 1
+    }
+}

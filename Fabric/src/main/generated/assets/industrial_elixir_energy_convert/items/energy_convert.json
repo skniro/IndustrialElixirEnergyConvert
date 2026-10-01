@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "industrial_elixir_energy_convert:block/energy_convert"
+  }
+}

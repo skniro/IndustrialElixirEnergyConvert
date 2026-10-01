@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "E": "industrial_elixir:re_battery",
+    "G": "industrial_elixir:machine",
+    "S": "industrial_elixir:iron_plate"
+  },
+  "pattern": [
+    "SES",
+    "SSS",
+    "SGS"
+  ],
+  "result": {
+    "id": "industrial_elixir_energy_convert:energy_convert"
+  }
+}

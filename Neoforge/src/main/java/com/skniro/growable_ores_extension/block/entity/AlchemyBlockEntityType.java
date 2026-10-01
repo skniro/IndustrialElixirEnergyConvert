@@ -1,0 +1,26 @@
+package com.skniro.industrial_elixir_energy_convert.block.entity;
+
+import com.skniro.industrial_elixir_energy_convert.GrowableOresExtension;
+import com.skniro.industrial_elixir_energy_convert.block.GrowableOresBlocks;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.function.Supplier;
+
+
+public class AlchemyBlockEntityType {
+
+    public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES =
+            DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, GrowableOresExtension.MOD_ID);
+
+
+    public static final Supplier<BlockEntityType<Alchemyblockentity>> ALCHEMY_BLOCK_ENTITY =
+            BLOCK_ENTITIES.register("alchemy_block", () -> new BlockEntityType<>(
+                    Alchemyblockentity::new, GrowableOresBlocks.GrowableOres_Block.get()));
+
+    public static void registerBlockEntityType(IEventBus eventBus) {
+        BLOCK_ENTITIES.register(eventBus);
+    }
+}

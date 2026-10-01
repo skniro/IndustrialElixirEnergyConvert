@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "industrial_elixir_energy_convert",
+  "version": "${version}",
+  "name": "Skniro's GrowableOres",
+  "description": "Add some growable ores extension.",
+  "authors": [
+    "skniro"
+  ],
+  "credits": [
+    "Rafan",
+    "gilnet",
+    "All translators"
+  ],
+  "contact": {
+    "website": "https://www.curseforge.com/skniro",
+    "sources": "https://github.com/skniro/GrowableOres_Extension",
+    "issues": "https://github.com/skniro/GrowableOres_Extension/issues"},
+  "license": "MIT",
+  "icon": "assets/industrial_elixir_energy_convert/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.skniro.industrial_elixir_energy_convert.datagen.GrowableOresDataGeneration"
+    ],
+    "client": [
+      "com.skniro.industrial_elixir_energy_convert.client.GrowableOresClient"
+    ],
+    "main": [
+      "com.skniro.industrial_elixir_energy_convert.GrowableOresExtension"
+    ]
+  },
+  "mixins": [
+    "industrial_elixir_energy_convert.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "fabric-api": "*",
+    "minecraft": "26.3.x",
+    "industrial_elixir": "*"
+  }
+}

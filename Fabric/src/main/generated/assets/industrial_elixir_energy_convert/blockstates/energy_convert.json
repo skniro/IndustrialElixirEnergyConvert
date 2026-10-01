@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "industrial_elixir_energy_convert:block/energy_convert"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "industrial_elixir_energy_convert:energy_convert"
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}
