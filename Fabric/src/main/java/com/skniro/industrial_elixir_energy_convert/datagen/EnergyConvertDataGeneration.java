@@ -11,6 +11,6 @@ public class EnergyConvertDataGeneration implements DataGeneratorEntrypoint {
         fabricDataGenerator.createPack().addProvider(EnergyConvertEnglishLanguageProvider::new);
         fabricDataGenerator.createPack().addProvider(EnergyConvertSimplifiedChineseLanguageProvider::new);
         fabricDataGenerator.createPack().addProvider(EnergyConvertTagGenerator::new);
-        fabricDataGenerator.createPack().addProvider(MachineRecipeGenerator::new);
+        fabricDataGenerator.createPack().addProvider(EnergyConvertMachineRecipeGenerator::new);
     }
 }

@@ -1,7 +1,6 @@
 package com.skniro.industrial_elixir_energy_convert.datagen;
 
 import com.skniro.industrial_elixir_energy_convert.block.EnergyConverterBlocks;
-import com.skniro.industrial_elixir.api.data.recipe.ModRecipeGenerator;
 import com.skniro.industrial_elixir.block.GeneralBlocks;
 import com.skniro.industrial_elixir.item.GrowableOresItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
@@ -15,8 +14,8 @@ import net.minecraft.world.item.crafting.Recipe;
 
 import java.util.concurrent.CompletableFuture;
 
-public class MachineRecipeGenerator extends FabricRecipeProvider {
-    public MachineRecipeGenerator(FabricPackOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
+public class EnergyConvertMachineRecipeGenerator extends FabricRecipeProvider {
+    public EnergyConvertMachineRecipeGenerator(FabricPackOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
         super(output, registriesFuture);
     }
 
