@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipes": "industrial_elixir_energy_convert:energy_convert"
+        "recipe": "industrial_elixir_energy_convert:energy_convert"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

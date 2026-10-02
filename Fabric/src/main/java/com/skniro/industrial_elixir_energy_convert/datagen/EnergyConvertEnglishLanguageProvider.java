@@ -6,8 +6,8 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.core.HolderLookup;
 import java.util.concurrent.CompletableFuture;
 
-public class GrowableEnglishLanguageProvider extends FabricLanguageProvider {
-    public GrowableEnglishLanguageProvider(FabricPackOutput dataGenerator, CompletableFuture<HolderLookup.Provider> registryLookup){
+public class EnergyConvertEnglishLanguageProvider extends FabricLanguageProvider {
+    public EnergyConvertEnglishLanguageProvider(FabricPackOutput dataGenerator, CompletableFuture<HolderLookup.Provider> registryLookup){
         super(dataGenerator,"en_us",registryLookup);
     }
 

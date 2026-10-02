@@ -1,5 +1,5 @@
 plugins {
-    id 'net.fabricmc.fabric-loom' version'1.17-SNAPSHOT'
+    id 'net.fabricmc.fabric-loom' version'1.18-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -59,8 +59,8 @@ dependencies {
         exclude(group: "net.fabricmc.fabric-api")
     }
 
-    implementation  ("curse.maven:reborncore-237903:8888168")
-    implementation  ("curse.maven:techreborn-233564:8888169")
+    implementation  ("curse.maven:reborncore-237903:8261647")
+    implementation  ("curse.maven:techreborn-233564:8603342")
 
     //modImplementation  ("curse.maven:powah-633483:4638300")
 

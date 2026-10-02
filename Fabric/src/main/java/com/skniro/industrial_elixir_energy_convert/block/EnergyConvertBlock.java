@@ -1,5 +1,7 @@
 package com.skniro.industrial_elixir_energy_convert.block;
 
+import com.mojang.serialization.MapCodec;
+import com.skniro.industrial_elixir.block.init.machine.CompressorBlock;
 import com.skniro.industrial_elixir_energy_convert.block.entity.AlchemyBlockEntityType;
 import com.skniro.industrial_elixir_energy_convert.block.entity.EnergyConvertBlockEntity;
 import com.skniro.industrial_elixir.api.energytier.EnergyTier;
@@ -10,6 +12,7 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -34,12 +37,13 @@ public class EnergyConvertBlock extends AbstractMachineblock {
                 (world1, pos, state1, blockEntity) -> blockEntity.tick(world1, pos, state1));
     }
 
-    /**
-     * The converter has no screen, so the default "open menu" behaviour of {@link AbstractMachineblock}
-     * is replaced by a plain interaction to avoid opening a {@code null} menu.
-     */
     @Override
     protected InteractionResult useItemOn(ItemStack stack, BlockState state, Level world, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
         return InteractionResult.SUCCESS;
+    }
+
+    @Override
+    protected MapCodec<? extends BaseEntityBlock> codec() {
+        throw new IllegalStateException("Block does not support getCodec!");
     }
 }

@@ -6,8 +6,8 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 
-public class GrowableModelProvider extends FabricModelProvider {
-    public GrowableModelProvider(FabricPackOutput dataGenerator){
+public class EnergyConvertModelProvider extends FabricModelProvider {
+    public EnergyConvertModelProvider(FabricPackOutput dataGenerator){
         super(dataGenerator);
     }
 
