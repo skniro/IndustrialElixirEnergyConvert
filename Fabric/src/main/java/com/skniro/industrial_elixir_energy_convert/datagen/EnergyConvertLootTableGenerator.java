@@ -7,8 +7,8 @@ import net.minecraft.core.HolderLookup;
 import java.util.concurrent.CompletableFuture;
 
 
-public class GrowableLootTableGenerator extends FabricBlockLootSubProvider {
-    protected GrowableLootTableGenerator(FabricPackOutput dataOutput, CompletableFuture<HolderLookup.Provider> registryLookup) {
+public class EnergyConvertLootTableGenerator extends FabricBlockLootSubProvider {
+    protected EnergyConvertLootTableGenerator(FabricPackOutput dataOutput, CompletableFuture<HolderLookup.Provider> registryLookup) {
         super(dataOutput, registryLookup);
     }
 

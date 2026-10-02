@@ -8,8 +8,8 @@ import java.util.concurrent.CompletableFuture;
 
 import static net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE;
 
-public class GrowableTagGenerator extends FabricTagsProvider.BlockTagsProvider {
-   public GrowableTagGenerator(FabricPackOutput output, CompletableFuture<HolderLookup.Provider> completableFuture) {
+public class EnergyConvertTagGenerator extends FabricTagsProvider.BlockTagsProvider {
+   public EnergyConvertTagGenerator(FabricPackOutput output, CompletableFuture<HolderLookup.Provider> completableFuture) {
         super(output, completableFuture);
    }
    @Override

@@ -6,8 +6,8 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.core.HolderLookup;
 import java.util.concurrent.CompletableFuture;
 
-public class GrowableSimplifiedChineseLanguageProvider extends FabricLanguageProvider {
-    public GrowableSimplifiedChineseLanguageProvider(FabricPackOutput dataGenerator, CompletableFuture<HolderLookup.Provider> registryLookup){
+public class EnergyConvertSimplifiedChineseLanguageProvider extends FabricLanguageProvider {
+    public EnergyConvertSimplifiedChineseLanguageProvider(FabricPackOutput dataGenerator, CompletableFuture<HolderLookup.Provider> registryLookup){
         super(dataGenerator,"zh_cn", registryLookup);
     }
 

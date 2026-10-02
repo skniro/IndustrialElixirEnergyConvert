@@ -21,7 +21,7 @@
   "environment": "*",
   "entrypoints": {
     "fabric-datagen": [
-      "com.skniro.industrial_elixir_energy_convert.datagen.GrowableOresDataGeneration"
+      "com.skniro.industrial_elixir_energy_convert.datagen.EnergyConvertDataGeneration"
     ],
     "client": [
       "com.skniro.industrial_elixir_energy_convert.client.GrowableOresClient"
